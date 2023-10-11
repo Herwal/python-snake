@@ -7,9 +7,9 @@ def get_color(num: int, row: int, col: int):  # Styrer farge
             color = "green"
     elif num > 0:
         if num % 2 == 0:
-            color = "purple"  # Slange
+            color = "yellow"  # Slange
         elif num % 2 != 0:
-            color = "blue"
+            color = "orange"
     elif num < 0:
         color = "red"  # Eple
     return color
