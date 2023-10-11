@@ -63,6 +63,13 @@ def add_apple_at_random_location(board: list, app):  # Legger til nytt eple ders
             pass
         counter += 1
     raise RuntimeError("No available space for apple after max attempts")
+    for rows in range(len(board)):
+        for cols in range(len(board[0])):
+            if board[rows][cols] == -1:
+                no_apples = True
+                pass
+        if no_apples:
+            add_apple_at_random_location(app.board, app)
 
 
 def timer_fired(app):
